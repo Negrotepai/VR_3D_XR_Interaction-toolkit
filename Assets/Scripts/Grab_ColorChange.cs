@@ -12,8 +12,8 @@ public class Grab_ColorChange : MonoBehaviour
     
     // Start is called before the first frame update
     
-    void Awake() {
-        gameObject.GetComponent<MeshRenderer>();
+    public void Awake() {
+        meshRenderer = gameObject.GetComponent<MeshRenderer>();
         /*grabInteractable = gameObject.GetComponent<XRGrabInteractable>();
         grabInteractable.OnActivate.AddListener(SetColor(PinkColor));
         grabInteractable.OnDeactivate.AddListener(SetColor(GrayColor));
